@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <style>
+        body{
+            background-color: rgb(242, 188, 244);
+            width:100vw;
+            height:100vh;
+            z-index: 0.5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .heading h1{
+            color:blue;
+            text-align: center;
+            font-size: 2rem;
+        }
+        h3{
+            width:70%;
+        }
+        .container{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding:30px;
+            width:70vw;
+            height:70vh;
+            background: linear-gradient(0deg,blue,rgb(212, 6, 198));
+            opacity:100%;
+            z-index:2;
+            color:white;
+            border:none;
+            border-radius: 22px;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container h2{
+            text-align: center;
+        }
+        .container ul{
+            list-style: none;
+        }
+        .container li{
+            font-weight: bold;
+            font-size: 22px;
+            padding:10px;
+            text-align: center;
+        }
+        .container li:hover{
+            background-color:rgb(252, 73, 225);
+            color:rgb(5, 5, 169);
+            opacity:90%;
+            font-weight: bolder;
+            border-radius: 50%;
+        }
+        #developer{
+            width:40%;
+        }
+        form{
+            width:65vw;
+        }
+        .container input{
+            width:65vw;
+            border-radius: 10px;
+        }
+        .btn-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:80%;
+        }
+        .two img{
+            width:40%;
+        }
+        .three img{
+            width:40%;
+        }
+        .four img{
+            width:40%;
+        }
+        button{
+            margin-top:50px;
+            text-align: center;
+            background-color: rgb(251, 11, 207);
+            width:80px;
+            color:white;
+            height:35px;
+            padding:auto;
+            border-radius: 20px;            
+        }
+        .btn-box{
+            width:100%;
+            display: flex;
+            justify-content: center;
+        }
+        .end h1{
+            font-size: 40px;
+        }
+        .end h3{
+            font-size: 25px;
+            text-align: center;
+        }
+        .end img{
+            width:50%;
+        }
+        .one{
+            display: block;
+        }
+        .two{
+            display: none;
+        }
+        .three{
+            display: none;
+        }
+        .four{
+            display: none;
+        }
+        .five{
+            display: none;
+        }
+        .end{
+            display: none;
+        }
+        @media screen and (max-width:360px){
+            button{
+                margin-top: 20px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="heading">
+        <h1 id="hh1">STUDENT INTERNSHIP PROGRAMME</h1>
+    </div>
+    <div class="one">
+        <div class="container">
+            <img id="developer" src="developer.png" alt="">
+            <h1>Choose your domain:</h1>
+            <ul class="option1">
+                <li>Website Development</li>
+                <li>App Development</li>
+                <li>Python Programming</li>
+                <li>Machine learning</li>
+            </ul>
+        </div>
+        </div>
+        <div class="two">
+        <div class="container">
+            <img src="job.png" alt="">
+            <h1>What type of Internship do you want?</h1>
+            <ul class="option2">
+                <li>Full-time</li>
+                <li>Part-time</li>
+                <li>Only on weekends</li>
+                <li>Freelancing</li>
+            </ul>
+        </div>
+        </div>
+        <div class="three">
+            <div class="container">
+                <img src="experience.png" alt="">
+                <h2>What is your experience in this domain?</h2>
+                <ul class="option3">
+                    <li>0-6 months</li>
+                    <li>6-12 months</li>
+                    <li>1-3years</li>
+                    <li>More than 3 years</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="four">
+        <div class="container">
+            <img src="education.png" alt="">
+            <h2>What is the degree of education you are pursuing?</h2>
+            <ul class="option4">
+                <li>B Tech</li>
+                <li>BCA</li>
+                <li>M Tech</li>
+                <li>MCA</li>
+            </ul>
+    </div>
+</div>
+<div class="five">
+    <div class="container">
+        <div class="option5">
+        <form>
+        <h1>Personal Details:</h1>
+        <h3>Name:</h3>
+        <input type="text" placeholder="Enter your Name">
+        <h3>Email:</h3>
+        <input type="text" placeholder="Enter your Email Id">
+        <h3>Contact Number:</h3>
+        <input type="text" placeholder="Enter your Contact Number">
+        <h3>LinkedIn profile Id:</h3>
+        <input type="text" placeholder="" >
+        <div class="btn-box">
+            <button type="button">Submit</button>
+        </div>
+        </form>
+    </div>
+    </div>
+</div>
+<div class="end">
+    <div class="container">
+        <img src="end.png" alt="">
+        <h1>Thank you</h1>
+        <h3>We will get back to you later</h3>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
