@@ -10,7 +10,7 @@ const three=document.querySelector(".three");
 const four=document.querySelector(".four");
 const five=document.querySelector(".five");
 const end=document.querySelector(".end");
-const btn=document.querySelector(".button");
+const btn=document.querySelector(".btn");
 const hh1=document.getElementById("hh1");
 
 const container=document.querySelector(".container");
@@ -33,7 +33,7 @@ ul4.addEventListener("click",function(){
     four.style.display="none";
     five.style.display="block";
 })
-ul5.addEventListener("click",function(){
+btn.addEventListener("click",function(){
     five.style.display="none";
     end.style.display="block";
     hh1.style.display="none";
